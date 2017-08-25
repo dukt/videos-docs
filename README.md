@@ -1,4 +1,4 @@
-# Videos Documentation
+# Videos 2 Documentation
 
 ## Getting Started
 
