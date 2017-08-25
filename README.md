@@ -8,7 +8,6 @@
 - [Connect to YouTube](en/connect-youtube.md)
 - [Connect to Vimeo](en/connect-vimeo.md)
 - [Configuration](en/configuration.md)
-- [License](en/license.md)
 
 ## Fields
 
