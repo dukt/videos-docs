@@ -24,4 +24,4 @@ Under the OAuth 2 tab, copy the **client ID** and **secret** from the Vimeo app 
 
 Once everything is setup, go to **Admin / Settings / Plugins / Videos** and connect to Vimeo.
 
-![Connect to Vimeo](assets/connect-vimeo-7.png)
+![Connect to Vimeo](assets/connect-vimeo-5.png)

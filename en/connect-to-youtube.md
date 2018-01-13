@@ -38,19 +38,19 @@ Once created, copy the **client ID** and **secret**, we're going to need them la
 
 Go to **My Project / Consent Screen** and make sure that the Product name field is **not** empty.
 
-![Set the product name](assets/connect-youtube-7.png)
+![Set the product name](assets/connect-youtube-6.png)
 
 ## 6. Set Client ID & Secret
 
 Paste the **client ID** and **secret** from the Google Console.
 
-![Google Settings with client ID & secret](assets/connect-youtube-6.png)
+![Google Settings with client ID & secret](assets/connect-youtube-7.png)
 
 ## 7. Connect to YouTube
 
 Go to **Admin / Plugins / Settings / Videos** and connect to YouTube.
 
-![Connect to YouTube](assets/connect-youtube-9.png)
+![Connect to YouTube](assets/connect-youtube-8.png)
 
 
 ## Localhost Usage
