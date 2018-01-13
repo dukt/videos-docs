@@ -4,13 +4,13 @@
 
 Go to **Admin / OAuth / Google Settings** and copy **Web Origin** and **Redirect URL**.
 
-{asset:908:img}
+![Google Settings](assets/connect-youtube-1.png)
 
 ## 2. Create a Google Console Project
 
 Go to the [Google Console](https://code.google.com/apis/console/) and create a new project.
 
-{asset:909:img}
+![Google Console Create Project](assets/connect-youtube-2.png)
 
 ## 3. Enable YouTube APIs
 
@@ -19,7 +19,7 @@ Under **My Project / APIs & Auth / APIs**, enable the following services:
 -  YouTube Analytics API
 -  YouTube Data API v3
 
-{asset:910:img}
+![Enable YouTube API](assets/connect-youtube-3.png)
 
 ## 4. Create a client ID
 
@@ -27,30 +27,30 @@ Go to **My Project / Credentials** and create a new client ID.
 
 Here you can paste the **Web Origin** and **Redirect URL** that we copied earlier.
 
-{asset:911:img}
+![Create a client](assets/connect-youtube-4.png)
 
 Once created, copy the **client ID** and **secret**, we're going to need them later.
 
-{asset:912:img}
+![Client credentials](assets/connect-youtube-5.png)
 
 
 ## 5. Product Name
 
 Go to **My Project / Consent Screen** and make sure that the Product name field is **not** empty.
 
-{asset:914:img}
+![Set the product name](assets/connect-youtube-7.png)
 
 ## 6. Set Client ID & Secret
 
 Paste the **client ID** and **secret** from the Google Console.
 
-{asset:913:img}
+![Google Settings with client ID & secret](assets/connect-youtube-6.png)
 
 ## 7. Connect to YouTube
 
 Go to **Admin / Plugins / Settings / Videos** and connect to YouTube.
 
-{asset:916:img}
+![Connect to YouTube](assets/connect-youtube-9.png)
 
 
 ## Localhost Usage

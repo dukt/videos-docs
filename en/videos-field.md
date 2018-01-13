@@ -1,6 +1,6 @@
 # Video Field
 
-{asset:929:img}
+![Image](assets/craft-videos-1.0-field.png)
 
 Craft Videos field type lets you add videos to your entries. Retrieving video informations is then pretty easy : a video variable is provided which let's you retrieve all the informations related to your video.
 
