@@ -4,9 +4,9 @@ module.exports = {
     base: '/videos/v2/',
     themeConfig: {
         nav: [
-            { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4' },
-            { text: 'Social', link: 'https://docs.dukt.net/social/v2' },
-            { text: 'Videos', link: '/v2' },
+            { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
+            { text: 'Social', link: 'https://docs.dukt.net/social/v2/' },
+            { text: 'Videos', link: '/' },
         ],
         sidebar: {
             '/': [
