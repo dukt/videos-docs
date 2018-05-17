@@ -2,6 +2,7 @@ module.exports = {
     title: 'Videos 2 Documentation',
     description: 'Videos 2 Documentation',
     base: '/videos/v2/',
+    ga: 'UA-1547168-34',
     themeConfig: {
         nav: [
             { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
