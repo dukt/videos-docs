@@ -2,13 +2,13 @@
 
 ## Getting Started
 
-- [Introduction](en/introduction.md)
-- [Requirements](en/requirements.md)
-- [Installation](en/installation.md)
-- [Connect to YouTube](en/connect-youtube.md)
-- [Connect to Vimeo](en/connect-vimeo.md)
-- [Configuration](en/configuration.md)
+- [Introduction](docs/introduction.md)
+- [Requirements](docs/requirements.md)
+- [Installation](docs/installation.md)
+- [Connect to YouTube](docs/connect-youtube.md)
+- [Connect to Vimeo](docs/connect-vimeo.md)
+- [Configuration](docs/configuration.md)
 
 ## Fields
 
-- [Video Field](en/video-field.md)
+- [Video Field](docs/video-field.md)
