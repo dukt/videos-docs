@@ -1,6 +1,6 @@
 # Configuration
 
-In addition to the settings available in the CP > Settings > Videos screen, the config items below can be placed into a `videos.php` file in your craft/config directory:
+Videos supports several configuration settings. You can override their values in your `config/videos.php` file.
 
 ## cacheDuration
 
