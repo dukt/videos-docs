@@ -4,6 +4,8 @@ Craft Videos field type lets you add videos to your entries. Retrieving video in
 
 <img src="./images/video-field@2x.png" title="Video Field" width="740" />
 
+## Templating
+
 ```twig
 {% set video = entry.video %}
 
