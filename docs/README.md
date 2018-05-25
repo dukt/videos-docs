@@ -1,4 +1,4 @@
-# About Videos
+# Introduction
 
 Connect to YouTube & Vimeo and publish social videos on your website.
 
