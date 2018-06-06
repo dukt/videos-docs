@@ -7,6 +7,8 @@ Craft Videos field type lets you add videos to your entries. Retrieving video in
 
 ## Output
 
+The Video field returns a [Video model](video-model.md) which you can use to access a video’s attributes from your templates.
+
 ```twig
 {% set video = entry.video %}
 

@@ -24,6 +24,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'Core Concepts',
+                    collapsable: false,
+                    children: [
+                        'video-model',
+                    ]
+                },
+                {
                     title: 'Fields',
                     collapsable: false,
                     children: [
