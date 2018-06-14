@@ -6,7 +6,9 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
+            { text: 'Facebook', link: 'https://docs.dukt.net/facebook/v2/'},
             { text: 'Social', link: 'https://docs.dukt.net/social/v2/' },
+            { text: 'Twitter', link: 'https://docs.dukt.net/twitter/v2/'},
             { text: 'Videos', link: '/' },
         ],
         sidebar: {
