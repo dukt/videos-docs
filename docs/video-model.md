@@ -38,9 +38,6 @@
 ### thumbnailSource
 `(string|null)` The thumbnail’s source.
 
-### thumbnailLargeSource
-`(string|null)` The thumbnail’s large source (Vimeo only).
-
 ### title
 `(string|null)` The video’s title.
 
