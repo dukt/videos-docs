@@ -26,6 +26,9 @@
 ### durationSeconds
 `(int|null)` Duration of the video in seconds.
 
+### duration8601
+`(int|null)` Duration of the video in ISO 8601 format.
+
 ### authorName
 `(string|null)` The author’s name.
 
