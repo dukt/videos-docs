@@ -2,6 +2,10 @@
 
 Videos supports several configuration settings. You can override their values in your `config/videos.php` file.
 
+The default plugin settings [can be overridden](https://craftcms.com/docs/3.x/extend/plugin-settings.html#overriding-setting-values) by creating a `videos.php` file under your `/config` directory.
+
+Here are the default settings used by Videos.
+
 ## cacheDuration
 
 The amount of time cache should last.
