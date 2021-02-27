@@ -26,6 +26,9 @@
 ### durationSeconds
 `(int|null)` Duration of the video in seconds.
 
+### duration8601
+`(string|null)` Duration of the video in ISO 8601 format.
+
 ### authorName
 `(string|null)` The author’s name.
 
@@ -37,9 +40,6 @@
 
 ### thumbnailSource
 `(string|null)` The thumbnail’s source.
-
-### thumbnailLargeSource
-`(string|null)` The thumbnail’s large source.
 
 ### title
 `(string|null)` The video’s title.
