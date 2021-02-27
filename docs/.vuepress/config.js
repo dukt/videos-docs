@@ -1,14 +1,14 @@
 module.exports = {
     title: 'Videos 2 Documentation',
     description: 'Videos 2 Documentation',
-    base: '/videos/v2/',
+    base: '/docs/videos/v2/',
     ga: 'UA-1547168-34',
     themeConfig: {
         nav: [
-            { text: 'Analytics', link: 'https://docs.dukt.net/analytics/v4/' },
-            { text: 'Facebook', link: 'https://docs.dukt.net/facebook/v2/'},
-            { text: 'Social', link: 'https://docs.dukt.net/social/v2/' },
-            { text: 'Twitter', link: 'https://docs.dukt.net/twitter/v2/'},
+            { text: 'Analytics', link: 'https://dukt.net/docs/analytics/v4/' },
+            { text: 'Facebook', link: 'https://dukt.net/docs/facebook/v2/'},
+            { text: 'Social', link: 'https://dukt.net/docs/social/v2/' },
+            { text: 'Twitter', link: 'https://dukt.net/docs/twitter/v2/'},
             { text: 'Videos', link: '/' },
         ],
         sidebar: {
