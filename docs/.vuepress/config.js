@@ -2,14 +2,14 @@ module.exports = {
     title: 'Videos Documentation',
     description: 'Videos Documentation',
     base: '/docs/videos/v2/',
-    plugins: [
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'UA-1547168-20'
-            }
-        ]
-    ],
+    plugins: {
+        '@vuepress/google-analytics': {
+            'ga': 'UA-1547168-20'
+        },
+        'sitemap': {
+            hostname: 'https://dukt.net/docs/videos/v2/'
+        },
+    },
     themeConfig: {
         docsRepo: 'dukt/videos-docs',
         docsDir: 'docs',
