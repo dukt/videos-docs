@@ -10,6 +10,7 @@ module.exports = {
             hostname: 'https://dukt.net/docs/videos/v2/'
         },
     },
+    theme: 'default-prefers-color-scheme',
     themeConfig: {
         docsRepo: 'dukt/videos-docs',
         docsDir: 'docs',
