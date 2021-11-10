@@ -1,75 +1,65 @@
-# Video Model
+# Video
+
+Class `\dukt\videos\models\FailedVideo`.
+
+You have access to a [Video model](video-model.md) when a video is trully loaded (with `loaded` property will be set to __true__), otherwise you will get a [FailedVideo model](failed-video-model.md) (with `loaded` property will be set to __false__).
+
+See how to use it in the [full video example](full-video-example.md).
 
 ## Properties
 
 ### id
-`(int|null)` The ID of the video.
-
-### raw
-`(mixed|null)` The raw response object.
+`string` The ID of the video.
 
 ### url
-`(string|null)` The URL of the video.
-
-### gatewayHandle
-`(string|null)` The gateway’s handle.
-
-### gatewayName
-`(string|null)` The gateway’s name.
-
-### date
-`(\DateTime|null)` The date the video was uploaded.
-
-### plays
-`(int|null)` The number of times the video has been played.
-
-### durationSeconds
-`(int|null)` Duration of the video in seconds.
-
-### duration8601
-`(string|null)` Duration of the video in ISO 8601 format.
-
-### authorName
-`(string|null)` The author’s name.
-
-### authorUrl
-`(string|null)` The author’s URL.
-
-### authorUsername
-`(string|null)` The author’s username.
-
-### thumbnailSource
-`(string|null)` The thumbnail’s source.
+`string` The video's url.
 
 ### title
-`(string|null)` The video’s title.
+`string` The video's title.
 
 ### description
-`(string|null)` The video’s description.
+`string` The video’s description.
+
+### duration
+`\DateInterval` Duration of the video.
+
+### publishedAt
+`\DateTime` The date the video was uploaded.
+
+### author
+`\dukt\videos\models\VideoAuthor` The video's author.
+
+### thumbnail
+`\dukt\videos\models\VideoThumbnail` The video's thumbnail.
+
+### size
+`\dukt\videos\models\VideoSize|null` The video's size.
 
 ### private = false
-`(bool)` Is this video private?.
+`bool` Is this video private?
 
-### width
-`(int|null)` The video’s width.
+### statistic
+`\dukt\videos\models\VideoStatistic` The video's statistic.
 
-### height
-`(int|null)` The video’s height.
+### gatewayHandle
+`string` The gateway’s handle.
 
+### raw
+`mixed` The raw response object.
+
+### loaded
+`bool:true` The video is loaded.
 
 ## Methods
 
-### getDuration(): string
-Get the video’s duration.
+### getGateway
+Get the video’s gateway.  
+```php
+getGateway(): \dukt\videos\base\Gateway
+```
 
-### getEmbed(array $opts = []): Twig_Markup
-Get the video’s embed.
-
-### getEmbedUrl(array $opts = []): string
-Get the video’s embed URL.
-
-### getGateway()
-Get the video’s gateway.
-
-### getThumbnail($size = 300)
-Get the video’s thumbnail.
+### getEmbed
+Get the video’s embed.  
+```php
+getEmbed(array $htmlOptions = [], array $urlOptions = []): \dukt\videos\models\AbstractVideoEmbed
+```

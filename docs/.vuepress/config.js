@@ -7,7 +7,7 @@ module.exports = {
             'ga': 'UA-1547168-20'
         },
         'sitemap': {
-            hostname: 'https://dukt.net/docs/videos/v2/'
+            hostname: 'https://dukt.net/docs/videos/v3/'
         },
     },
     theme: 'default-prefers-color-scheme',
@@ -33,17 +33,33 @@ module.exports = {
                     ]
                 },
                 {
-                    title: 'Core Concepts',
-                    collapsable: false,
-                    children: [
-                        'video-model',
-                    ]
-                },
-                {
                     title: 'Fields',
                     collapsable: false,
                     children: [
                         'video-field',
+                    ]
+                },
+                {
+                    title: 'Templates',
+                    collapsable: false,
+                    children: [
+                        'twig-filters',
+                        'twig-variables',
+                        'full-video-example',
+                    ]
+                },
+                {
+                    title: 'Models',
+                    collapsable: false,
+                    children: [
+                        'video-model',
+                        'video-author-model',
+                        'video-size-model',
+                        'video-statistic-model',
+                        'video-thumbnail-model',
+                        'failed-video-model',
+                        'video-embed-model',
+                        'failed-video-embed-model',
                     ]
                 },
             ],
