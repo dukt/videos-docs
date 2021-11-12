@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Videos Documentation',
     description: 'Videos Documentation',
-    base: '/docs/videos/v2/',
+    base: '/docs/videos/v3/',
     plugins: {
         '@vuepress/google-analytics': {
             'ga': 'UA-1547168-20'
@@ -14,7 +14,7 @@ module.exports = {
     themeConfig: {
         docsRepo: 'dukt/videos-docs',
         docsDir: 'docs',
-        docsBranch: 'v2',
+        docsBranch: 'v3',
         editLinks: true,
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated',
