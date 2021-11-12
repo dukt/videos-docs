@@ -62,6 +62,13 @@ module.exports = {
                         'failed-video-embed-model',
                     ]
                 },
+                {
+                    title: 'Extends',
+                    collapsable: false,
+                    children: [
+                        'gateway-extends',
+                    ]
+                },
             ],
         }
     }
