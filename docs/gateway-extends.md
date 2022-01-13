@@ -313,9 +313,9 @@ public function supportsSearch(): bool
 }
 ```
 
-### getExplorer
+### fetchSections
 
-Here you have to build the cloud service's explorer. Explorer is splitted into Sections, which are splitted into Collections.  
+Here you have to build the cloud service'sections. Sections are splitted into Collections.  
 You have to get collections list by querying the cloud service API and build the different part of the explorer with these information.  
 Each collection must keep information to querying the cloud service API to find videos to show in. These informations are a method and some options (like a playlist ID).  
 Method is the name of a method you will have to define that which be called by the javascript layer of the explorer. For example `'playlist'`method with `['id' => 'playlist-ID']` will call a `getVideosPlaylist(array $options = [])` method in the gateway (so you have to define it). See `\dukt\videos\gateways\YouTube` for more concret examples (with pagination example too).
@@ -323,20 +323,20 @@ Method is the name of a method you will have to define that which be called by t
 You have to define this method (here is the YouTube example):
 
 ```php
-public function getExplorer(): \dukt\videos\models\GatewayExplorer
+public function fetchSections(): void
 {
-    $explorer = new \dukt\videos\models\GatewayExplorer();
+    $sections = [];
 
     // library section
-    $explorer->sections[] = new \dukt\videos\models\GatewayExplorerSection([
+    $sections[] = new \dukt\videos\models\GatewaySection([
         'name' => Craft::t('videos', 'explorer.section.library.title'),
         'collections' => [
-            new \dukt\videos\models\GatewayExplorerCollection([
+            new \dukt\videos\models\GatewayCollection([
                 'name' => Craft::t('videos', 'explorer.collection.upload.title'),
                 'method' => 'uploads',
                 'icon' => 'video-camera',
             ]),
-            new \dukt\videos\models\GatewayExplorerCollection([
+            new \dukt\videos\models\GatewayCollection([
                 'name' => Craft::t('videos', 'explorer.collection.like.title'),
                 'method' => 'likes',
                 'icon' => 'thumb-up',
@@ -349,12 +349,12 @@ public function getExplorer(): \dukt\videos\models\GatewayExplorer
         $playlistsData = $this->_fetchPlaylists();
 
         if (count($playlistsData) > 0) {
-            $section = new \dukt\videos\models\GatewayExplorerSection([
+            $section = new \dukt\videos\models\GatewaySection([
                 'name' => Craft::t('videos', 'explorer.section.playlist.title'),
             ]);
 
             foreach ($playlistsData as $playlistData) {
-                $section->collections[] = new \dukt\videos\models\GatewayExplorerCollection([
+                $section->collections[] = new GatewayCollection([
                     'name' => $playlistData['snippet']['title'],
                     'method' => 'playlist',
                     'options' => ['id' => $playlistData['id']],
@@ -362,14 +362,14 @@ public function getExplorer(): \dukt\videos\models\GatewayExplorer
                 ]);
             }
 
-            $explorer->sections[] = $section;
+            $sections[] = $section;
         }
-    } catch (\dukt\videos\errors\ApiResponseException $e) {
+    } catch (\dukt\videos\errors\ApiClientCreateException $e) {
         // log exception
         Craft::error($e->getMessage(), __METHOD__);
     }
 
-    return $explorer;
+    $this->_sections = $sections;
 }
 ```
 
