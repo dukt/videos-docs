@@ -59,7 +59,6 @@ module.exports = {
                         'video-thumbnail-model',
                         'failed-video-model',
                         'video-embed-model',
-                        'failed-video-embed-model',
                     ]
                 },
                 {
