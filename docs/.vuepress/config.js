@@ -54,7 +54,6 @@ module.exports = {
                     children: [
                         'video-model',
                         'video-author-model',
-                        'video-size-model',
                         'video-thumbnail-model',
                         'video-embed-model',
                     ]

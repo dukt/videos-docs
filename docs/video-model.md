@@ -32,8 +32,11 @@ See how to use it in the [full video example](full-video-example.md).
 ### thumbnail
 `\dukt\videos\models\VideoThumbnail` The video's thumbnail.
 
-### size
-`\dukt\videos\models\VideoSize|null` The video's size.
+### width
+`int` The video size's width.
+
+### height
+`int` The video size's height.
 
 ### private = false
 `bool` Is this video private?
