@@ -26,8 +26,11 @@ See how to use it in the [full video example](full-video-example.md).
 ### publishedAt
 `\DateTime` The date the video was uploaded.
 
-### author
-`\dukt\videos\models\VideoAuthor` The video's author.
+### authorName
+`string` The video author's name.
+
+### authorUrl
+`string` The video author's url.
 
 ### thumbnail
 `\dukt\videos\models\VideoThumbnail` The video's thumbnail.
