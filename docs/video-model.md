@@ -38,8 +38,8 @@ See how to use it in the [full video example](full-video-example.md).
 ### private = false
 `bool` Is this video private?
 
-### statistic
-`\dukt\videos\models\VideoStatistic` The video's statistic.
+### plays
+`int` The number of times the video has been played.
 
 ### gatewayHandle
 `string` The gateway’s handle.
