@@ -57,7 +57,6 @@ module.exports = {
                         'video-size-model',
                         'video-statistic-model',
                         'video-thumbnail-model',
-                        'failed-video-model',
                         'video-embed-model',
                     ]
                 },
