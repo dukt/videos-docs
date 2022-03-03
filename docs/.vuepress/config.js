@@ -53,7 +53,6 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'video-model',
-                        'video-thumbnail-model',
                         'video-embed-model',
                     ]
                 },

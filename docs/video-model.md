@@ -32,8 +32,11 @@ See how to use it in the [full video example](full-video-example.md).
 ### authorUrl
 `string` The video author's url.
 
-### thumbnail
-`\dukt\videos\models\VideoThumbnail` The video's thumbnail.
+### thumbnailSmallestSourceUrl
+`string|null` The video's smallest thumbnail source url.
+
+### thumbnailLargestSourceUrl
+`string|null` The video's largest thumbnail source url.
 
 ### width
 `int` The video size's width.
@@ -68,4 +71,10 @@ getGateway(): \dukt\videos\base\Gateway
 Get the video’s embed.  
 ```php
 getEmbed(array $htmlOptions = [], array $urlOptions = []): \dukt\videos\models\AbstractVideoEmbed
+```
+
+### getThumbnail
+Get the thumbnail's url by size.
+```php
+getThumbnail(int $size = 300): string
 ```
