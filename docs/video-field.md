@@ -12,9 +12,22 @@ The Video field returns a [Video model](video-model.md) which you can use to acc
 ```twig
 {% set video = entry.video %}
 
-<ul>
-    <li>title: {{ video.title }}</li>
-    <li>url: {{ video.url }}</li>
-    <li>embed: {{ video.embed({ width: 300, height: 200 }) }}</li>
-</ul>
+{% if video %}
+    {% if not video.hasErrors('url') %}
+        <ul>
+            <li>title: {{ video.title }}</li>
+            <li>url: {{ video.url }}</li>
+            <li>embed: {{ video.embed({ width: 300, height: 200 }) }}</li>
+        </ul>
+    {% else %}
+        <p>Video has errors:</p>
+        <ul>
+            {% for error in video.getErrors('url') %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% else %}
+    <p>No video.</p>
+{% endinf %}
 ```

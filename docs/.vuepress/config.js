@@ -27,23 +27,31 @@ module.exports = {
                         '',
                         'requirements',
                         'installation',
+                        'updating',
+                    ]
+                },
+                {
+                    title: 'Configuration',
+                    collapsable: false,
+                    children: [
                         'connect-youtube',
                         'connect-vimeo',
                         'configuration',
                     ]
                 },
                 {
-                    title: 'Core Concepts',
-                    collapsable: false,
-                    children: [
-                        'video-model',
-                    ]
-                },
-                {
-                    title: 'Fields',
+                    title: 'Usage',
                     collapsable: false,
                     children: [
                         'video-field',
+                        'template-variables',
+                    ]
+                },
+                {
+                    title: 'Models',
+                    collapsable: false,
+                    children: [
+                        'video-model',
                     ]
                 },
             ],

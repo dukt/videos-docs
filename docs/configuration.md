@@ -1,4 +1,4 @@
-# Configuration
+# Config Settings
 
 The default plugin settings [can be overridden](https://craftcms.com/docs/3.x/extend/plugin-settings.html#overriding-setting-values) by creating a `videos.php` file under your `/config` directory.
 
